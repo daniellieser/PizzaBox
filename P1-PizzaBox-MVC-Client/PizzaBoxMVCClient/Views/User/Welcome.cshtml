@@ -1,0 +1,19 @@
+﻿@model PizzaBoxMVCClient.Models.User
+<h1>Thanks for joining PizzaBox!</h1>
+<br />
+<table style="width:90%">
+    <thead>
+        <tr>
+            <th>User ID: </th>
+            <th>Name :</th>
+            <th>Phone # :</th>
+
+        </tr>
+        <tr>
+            <td>@Html.DisplayFor(model => model.UserId)  </td>
+            <td>@Html.DisplayFor(model => model.UserName)  </td>
+            <td>@Html.DisplayFor(model => model.UserPhone)  </td>
+
+        </tr>
+    </thead>
+</table>

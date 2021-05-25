@@ -1,0 +1,25 @@
+﻿@model IEnumerable<PizzaBoxMVCClient.Models.User>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Create New PizzaBox Account</h1>
+<p>We are happy for you to join the PizzaBox family!</p>
+<br />
+<form method="post" asp-action="CreateUser" asp-controller="User">
+    <div class="row">
+        <div class="col">
+            <label for="UserId">Choose ID #</label>
+            <input class="form-control" type="number" id="UserId" name="UserId" />
+            
+        </div><div class="col">
+    <label for="userName">Name</label>
+    <input class="form-control" type="text" id="UserName" name="UserName" />
+</div><div class="col">
+    <label for="UserPhone">Phone Number</label>
+    <input class="form-control" type="text" id="UserPhone" name="UserPhone" />
+</div>
+    </div>
+    <br />
+    <button type="submit" value="Submit" class="btn btn-primary">Create Account</button>
+</form>
